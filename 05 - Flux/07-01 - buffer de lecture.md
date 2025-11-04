@@ -18,11 +18,11 @@ L’utilisateur saisi dans l’ordre les informations suivantes lorsque le progr
 
 | Instruction 	                                       |  Buffer           | Commentaire                              |
 |-------------------------------------------------------|-------------------|------------------------------------------|
-|`cout << "entrer des valeurs : ";`                     |                   |                                          |
-|`while(cin.get() != '\n');`                            |                   |                                          |
-|`cout << endl;`                                        |                   |                                          |
-|`cin  >> a;`                                           |                   |                                          |
-|`cin  >> b;`                                           |                   |                                          |
+|`cout << "entrer des valeurs : ";`                     |vide               |  il veut le buffer d'entré pas vide      |
+|`while(cin.get() != '\n');`                            |                 |                                          |
+|`cout << endl;`                                        |     ↩︎            |                                          |
+|`cin  >> a;`                                           |      a             |                                          |
+|`cin  >> b;`                                           |      b             |                                          |
 |`cin.ignore(numeric_limits<streamsize>::max(), '\n');` |                   |                                          |
 |`cin  >> x;`                                           |                   |                                          |
 |`cin  >> y;`                                           |                   |                                          |

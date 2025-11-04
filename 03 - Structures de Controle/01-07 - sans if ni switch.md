@@ -10,6 +10,11 @@ if (i < 1) {
 }
 ~~~
 
+b = (i<1 || i>2 );
+
+
+
+
 <details>
 <summary>Solution</summary>
 
@@ -29,6 +34,10 @@ if (j == 0) {
    }
 }
 ~~~
+
+
+b = (j==0) || !(i/j<k) 
+
 
 <details>
 <summary>Solution</summary>
@@ -51,6 +60,29 @@ if (j == 0) {
    }
 }
 ~~~
+
+b= (j!=0) && (i/j<k)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <details>
 <summary>Solution</summary>

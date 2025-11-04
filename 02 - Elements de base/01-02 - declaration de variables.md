@@ -10,36 +10,41 @@ Pour chaque séquence d'instructions suivante, déterminez si elle est correcte 
     n = 1 – 2 * n;
     n = n + 1;
    ~~~
-
+    n = 0 
 2.  
     ~~~cpp
     int n = 1;
     n = n + 1;
     int n = 1 – 2 * n;
     ~~~
+    Non, on ne peut pas redéclarer n.
 3. 
     ~~~cpp
     int n = 1, p = 2;
     n = (n + 1) * (n - k);
     ~~~
+    La variable n'est pas déclarée
 4. 
     ~~~cpp
     int n, m = 0;
     n = 2 * n - 1;
     m = n + 1;
     ~~~
+    n n'est pas initialisé
  5. 
     ~~~cpp
     int n = 5, m = 0;
     const int nb_produit = 10;
     m = n * nb_produit - 1;    
     ~~~
+    m=49
  6. 
     ~~~cpp
     int n = 5, m = 0;
     const int nb_produit = 10;
     m = n * nb_produit--;    
     ~~~
+    La valeur de nb_produit est réellement changée alors que c'est une constante.
 
 <details>
 <summary>Solution</summary>

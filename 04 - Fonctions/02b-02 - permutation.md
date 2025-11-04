@@ -1,6 +1,39 @@
 # Permutation circulaire droite de 3 réels
 Ecrire un programme C++ qui met à disposition une fonction sans valeur de retour et prenant 3 paramètres de type double permettant d'effectuer une permutation circulaire droite de ces 3 valeurs.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <details>
 <summary>Solution</summary>
 

@@ -8,7 +8,7 @@ Déterminer "à la main" ce que va afficher, à l'exécution, le programme ci-de
 using namespace std;
 
 void f(int n) {
-   n *= n + 1;
+   n *= n + 1; // 2 * (2+1)
    cout << "B : n = " << n << endl;
 }
 
@@ -20,6 +20,13 @@ int main() {
    return EXIT_SUCCESS;
 }
 ~~~
+
+
+A: 2
+B: 6
+C: 4 //vu que n passé en paramètre est une copie, la valeur de n reste inchangée, donc au point C la valeur de n vaut toujours 2
+
+
 
 <details>
 <summary>Solution</summary>

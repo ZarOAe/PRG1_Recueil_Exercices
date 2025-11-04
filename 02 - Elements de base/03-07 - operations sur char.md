@@ -18,8 +18,10 @@ z = x + '0';
 cout << "4. " << z << endl;
 ~~~
 
-
-
+1. E //num 69 table ascii
+2. F
+3. A
+4. q // 65 + 48 =113 table ascii
 
     
 

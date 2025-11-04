@@ -23,6 +23,16 @@ Hauteur du triangle (h > 0) : 7
 ~~~
 
 
+
+
+
+
+
+
+
+
+
+
 <details>
 <summary>Solution</summary>
 

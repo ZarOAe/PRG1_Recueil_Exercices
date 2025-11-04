@@ -8,6 +8,24 @@ Pour ce faire, écrire une fonction booléenne *estBissextile* prenant en param�
 - elle est divisible par 400 ...
 - ou alors par 4 mais pas par 100.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <details>
 <summary>Solution</summary>
 
@@ -26,7 +44,7 @@ bool estBissextile(int annee) {
     // return annee % 400 == 0 or annee % 4 == 0 and annee % 100 != 0;
     // return annee % 400 == 0 || annee % 4 == 0 && annee % 100 != 0;
     // return !(annee % 400) || !(annee % 4) && annee % 100; }
-
+}
 //------------------------------------------------------------
 void test(int annee) {
     cout << annee << " : " << boolalpha << estBissextile(annee) << endl;

@@ -15,6 +15,27 @@ int& d = min(a, b, c);
 
 **NB** ne pas utiliser de `if`
 
+
+
+int& min&(&a,&b,&c){
+   return a <c ?
+    (a < b ? a : b) :
+    b < c ? b : c;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <details>
 <summary>Solution</summary>
 

@@ -9,6 +9,14 @@ for (int i = 0; i < n; ++i) {
    cout << i << endl;
 }
 ~~~
+{
+   int i =0;
+   while(i < n)
+   {
+      cout << i << endl;
+      ++i;
+   }
+}
 
 <details>
 <summary>Solution</summary>
@@ -31,6 +39,14 @@ for (int i = 0; i < n; ++i) {
    cout << i << endl;
 }
 ~~~
+{
+   int i=0;
+   do
+   {
+      cout << i << endl;
+      ++i;
+   }while(i < n);
+}
 
 <details>
 <summary>Solution</summary>
@@ -69,6 +85,14 @@ while (i-- > n) {
    cout << i << endl;
 }
 ~~~
+int i=0;
+
+for(;i-->n;)
+{
+   cout << i << endl;
+}
+
+
 
 <details>
 <summary>Solution</summary>
@@ -89,6 +113,15 @@ while (i-- > n) {
    cout << i << endl;
 }
 ~~~
+
+int =0;
+if(i-->n){
+   do{
+      cout << i << endl;
+   }while(i-- > n);
+}
+
+
 
 <details>
 <summary>Solution</summary>
@@ -115,6 +148,14 @@ do {
 } while (i < n);   
 ~~~
 
+int i=0;
+cout << i << endl;
+for(++i;i < n ; ++i)
+{
+   cout << i << endl;
+}
+
+
 <details>
 <summary>Solution</summary>
 
@@ -136,6 +177,15 @@ do {
   ++i; 
 } while (i < n);   
 ~~~
+
+int i=0;
+cout << i << endl;
+while(++i, i < n)
+{
+   cout << i << endl;
+   ++i;
+}
+
 
 <details>
 <summary>Solution</summary>

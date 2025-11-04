@@ -16,12 +16,18 @@ int main() {
 }
 
 void mystere(int& a, int& b) {
-   a = a - b;
-   b = b + a;
-   a = b - a;
+   a = a - b;// a = 3-4; a = -1;
+   b = b + a; // b = 4 +(-1) = 3
+   a = b - a; // a =  3 - (-1) = 4
 }
 
 ~~~
+x = 4 y = 3
+
+
+
+
+
 
 <details>
 <summary>Solution</summary>

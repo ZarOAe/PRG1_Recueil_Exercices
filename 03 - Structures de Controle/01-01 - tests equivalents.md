@@ -18,6 +18,22 @@ if (prixActuel < 100) {
 }
 ~~~
 
+Non, car si le prixActuel = 100, la valeur sera différente, puor le reste des valeurs ils sont équivalents
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <details>
 <summary>Solution</summary>
 Non, si prixActuel == 100, la valeur de nouveauPrix diffère. 

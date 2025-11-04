@@ -13,13 +13,13 @@ En cas d'erreur, indiquez la raison.\
 
 | # | Expression | Résultat |
 |---| ---------- |---|
-| 1 | `j % i` | |
-| 2 | `n % i`  | |
-| 3 | `y % x`  | |
-| 4 | `y % i` | |
-| 5 | `-j % i` | |
-| 6 | `n % ++i` | |
-| 7 | `n++ % ++i` | |
+| 1 | `j % i` | 1 |
+| 2 | `n % i`  | 0|
+| 3 | `y % x`  | Erreur, le modulo ne marche qu'avec des entiers|
+| 4 | `y % i` | Erreur le modulo ne marche qu'avec des entiers|
+| 5 | `-j % i` | -1|
+| 6 | `n % ++i` |4 |
+| 7 | `n++ % ++i` |4 | Le n++, n'est effectué qu'après le calcul, donc on a 10%6, ce qui est égal a 4, n est ensuite incrémenté et devient 11.
 
 
     

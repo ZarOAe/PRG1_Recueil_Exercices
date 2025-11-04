@@ -19,6 +19,16 @@ Vérifier le bon fonctionnement de la fonction en appliquant le scénario de tes
 - Deuxième retrait = 300
 - Afficher le montant du retrait effectif et le solde courant du compte
 
+
+
+
+
+
+
+
+
+
+
 <details>
 <summary>Solution</summary>
 

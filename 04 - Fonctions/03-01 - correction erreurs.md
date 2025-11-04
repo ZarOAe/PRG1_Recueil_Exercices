@@ -18,15 +18,15 @@ Le programme ci-dessous contient plusieurs erreurs.
 12    int n = C;
 13    double x = C;
 14   
-15    f(C);
-16    f(n);
-17    f(x);
-18    g(C);
-19    g(n);
-20    g(x);
-21    h(C);
-22    h(n);
-23    h(x);
+15    f(C);//2
+16    f(n);//2
+17    f(x);//2
+18    g(C);//impossible on passe par référence une constante qui es non modifiable
+19    g(n);//impossible il veut une référence sur un double
+20    g(x);//2
+21    h(C);//1
+22    h(n);//1
+23    h(x);//2
 24   
 25    return EXIT_SUCCESS;
 26 }
@@ -42,7 +42,7 @@ Le programme ci-dessous contient plusieurs erreurs.
 36 }
 37 
 38 void h(const double& x) {
-39    x = x + 1;
+39    x = x + 1;// problème on ne peut pas modifier un const
 40    cout << "x = " << x <<endl;
 41 }
 ~~~

@@ -7,10 +7,9 @@ int i = 5;
 const int j = 10;
 
 int* ptr_i = &i;
-const int* ptr_j = &j;
-
-const int* ptr_i_1 = &i;
-int* const ptr_i_2 = &i;
+const int* ptr_j = &j; //ptr_j est un pointeur en readonly sur j
+const int* ptr_i_1 = &i; //ptr_i_1 est un pointeur read only sur i
+int* const ptr_i_2 = &i; //est un pointeur sur i
 ~~~
 
 - Indiquez si les instructions suivantes sont correctes ou pas (génère une erreur) ? 
@@ -20,13 +19,13 @@ int* const ptr_i_2 = &i;
 
 | # | Instruction         | Correcte ? (oui/non) | Explication |  i  |  j  |
 |---| ------------------- | -------------------- | ----------- | ---:| ---:|
-| 1 | `*ptr_i = 15;`      |                      |             |     |     |
-| 2 | `int *ptr_j_1 = &j;`|                      |             |     |     |
-| 3 | `ptr_j = ptr_i;`    |                      |             |     |     |
-| 4 | `*ptr_i_1 = 25;`    |                      |             |     |     |
-| 5 | `*ptr_i_2 = 30;`    |                      |             |     |     |
-| 6 | `ptr_i_1 = &j;`     |                      |             |     |     |
-| 7 | `ptr_i_2 = &j;`     |                      |             |     |     |
+| 1 | `*ptr_i = 15;`      | oui | i est modifiable           |  15   |  10   |
+| 2 | `int *ptr_j_1 = &j;`|  non |  on ne peut pas faire un pointeur non constant, sur un pointeur constant |     |     |
+| 3 | `ptr_j = ptr_i;`    |       oui               |  j est modifiable         |   5  | 5    |
+| 4 | `*ptr_i_1 = 25;`    |         non        |  on tente d'écrire une valeur constante          |     |     |
+| 5 | `*ptr_i_2 = 30;`    |oui|on peut changer la valeur mais pas la cible du pointeur             |  30   | 10    |
+| 6 | `ptr_i_1 = &j;`     |oui|on peut changer la cible|  5   | 10    |
+| 7 | `ptr_i_2 = &j;`     |         non             |la cible est constante|     |     |
 
 
 

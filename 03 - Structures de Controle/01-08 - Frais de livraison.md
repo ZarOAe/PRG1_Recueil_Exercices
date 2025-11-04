@@ -10,14 +10,37 @@ Complétez le programme qui suit pour qu'il détermine et affiche le tarif de li
 
 ~~~cpp
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() {
+
+   const int fraisSiSuisse = 5;
+   const int fraisTessinOuGrisons= 7;
+   const int fraisLiechtensetein =7;
+   const int fraisResteDuMonde = 10;
+
+   int tarifLivraison;
+
    cout << "Livraison en Suisse ? (O/N) ";
    char reponse1; cin >> reponse1;
-   
-   // votre code vient ici
+   if(response1=="O")
+   {
+      cout << "Livraison au Tessins ou Grisons ? (O/N) ";
+      char reponse2; cin >> reponse2;
+      tarifLivraison= (response2=="O" ? 7 : 5)
+   }
+   else
+   {
+      cout << "Livraison au Lechtenstein ? (O/N) ";
+      char reponse3; cin >> reponse3;
+      tarifLivraison = (response3=="O" ? 7 : 10 )
+   }
+
+   cout <<"frais livraison : " + to_string(tarifLivraison) + " francs" << endl;
+
+   return EXIT_SUCCESS;
 }
 ~~~
 

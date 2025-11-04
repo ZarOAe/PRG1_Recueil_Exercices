@@ -12,6 +12,25 @@ Exemples
 
 La fonction retourne un booléen indiquant si des caractères ont été affichés.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 <details>
 <summary>Solution</summary>
 

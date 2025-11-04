@@ -3,21 +3,21 @@ Pour chacun des cas ci-dessous, indiquez s'il s'agit d'un identificateur C++ lé
 
 |  #  | Identificateur | Oui / Non | Explication | 
 | --- | -------------- | --------- | ----------- |
-| 1 | `007` | | |
-| 2 | `james_bond_007`  | | |
-| 3 | `james_bond__007`  | | |
-| 4 | `james bond` | | |
-| 5 | `sOs` | | |
-| 6 | `SOS` | | |
-| 7 | `_007` | | |
-| 8 | `__007` | | |
-| 9 | `_007_` | | |
-| 10 | `bond-007` | | |
-| 11 | `tom&jerry` | | |
-| 12 | `int` | | |
-| 13 | `INT` | | |
-| 14 | `André` | | |
-| 15 | `_` | | |
+| 1 | `007` |Non |On ne peut pas commencer par un chiffre | 
+| 2 | `james_bond_007`  | oui|Commence par une miniscule comporte des soulignées |
+| 3 | `james_bond__007`  |oui |commence par une miniscule comporte des soulignées |
+| 4 | `james bond` |non |On ne peut pas mettre des espaces |
+| 5 | `sOs` |oui |commence par une miniscule |
+| 6 | `SOS` | oui|on peut commencer par une majuscule |
+| 7 | `_007` |oui | Commence par un souligné|
+| 8 | `__007` |Oui |commence par un souligné |
+| 9 | `_007_` | oui|commence par un souligné, comporte des chiffres, qui ne sont pas en premier caractère |
+| 10 | `bond-007` | non|comporte un caractère spécial |
+| 11 | `tom&jerry` | non|comporte un caractère spécial |
+| 12 | `int` |non |C'est un mot réservé |
+| 13 | `INT` |non |On ne précise pas le type dans le nom et c'est en majuscule |
+| 14 | `André` |non |comporte un caractère spécial |
+| 15 | `_` |oui |On peut commencer par un souligné |
 
 
 
